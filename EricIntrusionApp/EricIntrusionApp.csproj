@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A439CF9C-8CFC-444A-AFF3-A24E52B3595D}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EricIntrusionApp</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>EricIntrusionApp</AssemblyName>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Mobile">
+      <HintPath>..\Components\xamarin.mobile-0.7\lib\android\Xamarin.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="Mono.Android.GoogleMaps" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Data" />
+    <Reference Include="SQLite">
+      <HintPath>..\Components\sqlite-net-1.0.1\lib\android\SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetupActivityOne.cs" />
+    <Compile Include="SettingsActivity.cs" />
+    <Compile Include="ProtectionService.cs" />
+    <Compile Include="AccountActivity.cs" />
+    <Compile Include="ProtectionActivity.cs" />
+    <Compile Include="Resources\class\SettingsItems.cs" />
+    <Compile Include="Resources\Adapter\SettingsLayoutAdapter.cs" />
+    <Compile Include="Resources\class\HistoryItems.cs" />
+    <Compile Include="Resources\Adapter\HistoryLayoutAdapter.cs" />
+    <Compile Include="HistoryActivity.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Resources\class\DataAccessObject.cs" />
+    <Compile Include="StartupActivity.cs" />
+    <Compile Include="SoundService.cs" />
+    <Compile Include="IntrusionReport.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Resources\OptionItems.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\AppLogo2.png" />
+    <AndroidResource Include="Resources\drawable\HistoryIcon.png" />
+    <AndroidResource Include="Resources\drawable\SettingsIcon.jpg" />
+    <AndroidResource Include="Resources\drawable\ProtectionIcon.png" />
+    <AndroidResource Include="Resources\drawable\configurationsettings.png" />
+    <AndroidResource Include="Resources\layout\Settings.axml" />
+    <AndroidResource Include="Resources\layout\Settingslayout.axml" />
+    <AndroidResource Include="Resources\layout\SetupOne.axml" />
+    <AndroidResource Include="Resources\layout\SetupTwo.axml" />
+    <AndroidResource Include="Resources\layout\LockScreen.axml" />
+    <AndroidResource Include="Resources\layout\HistoryLayout.axml" />
+    <AndroidResource Include="Resources\layout\History.axml" />
+    <AndroidResource Include="Resources\drawable\next2.png" />
+    <AndroidResource Include="Resources\drawable\User2.png" />
+    <AndroidResource Include="Resources\drawable\lock.png" />
+    <AndroidResource Include="Resources\drawable\ButtonBehaviour.xml" />
+    <AndroidResource Include="Resources\layout\StartupActivity.axml" />
+    <AndroidResource Include="Resources\drawable\home.png">
+      <Gettext-ScanForTranslations>False</Gettext-ScanForTranslations>
+    </AndroidResource>
+    <AndroidResource Include="Resources\raw\siren1.wav" />
+    <AndroidResource Include="Resources\raw\siren.mp3" />
+    <AndroidResource Include="Resources\layout\PictureScreen.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\class\" />
+    <Folder Include="Resources\Adapter\" />
+    <Folder Include="Resources\raw\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="xamarin.mobile">
+      <Version>0.7</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="sqlite-net">
+      <Version>1.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

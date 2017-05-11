@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000045">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="34.7dp"
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="10.7dp"
+        android:layout_marginTop="50.8dp">
+        <TextView
+            android:text="Name:"
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="27.3dp"
+            android:layout_marginBottom="0.0dp"
+            android:layout_marginLeft="0.0dp"
+            style="@android:style/TextAppearance.DeviceDefault.Medium" />
+        <EditText
+            android:layout_width="172.4dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/NameText"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginLeft="40.0dp"
+            android:visibility="visible"
+            android:text="Eric Watat Lowe"
+            android:background="#000045"
+            android:textColor="#ffffffff"
+            android:textCursorDrawable="@android:drawable/screen_background_light" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="34.7dp"
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="10.7dp">
+        <TextView
+            android:text="Email:"
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="27.3dp"
+            android:layout_marginBottom="0.0dp"
+            android:layout_marginLeft="0.0dp"
+            style="@android:style/TextAppearance.DeviceDefault.Medium" />
+        <EditText
+            android:layout_width="211.5dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/EmailText"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginLeft="42.8dp"
+            android:visibility="visible"
+            android:text="eric@watat.com"
+            android:background="#000045"
+            android:inputType="textEmailAddress"
+            android:textColor="#ffffffff"
+            android:shadowColor="#ffffffff"
+            android:textCursorDrawable="@android:drawable/screen_background_light" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="34.7dp"
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="10.7dp">
+        <TextView
+            android:text="Password:"
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="27.3dp"
+            android:layout_marginBottom="0.0dp"
+            android:layout_marginLeft="0.0dp"
+            style="@android:style/TextAppearance.DeviceDefault.Medium" />
+        <EditText
+            android:layout_width="132.0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/PasswordText"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:visibility="visible"
+            android:text="password"
+            android:background="#000045"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <Button
+        android:text="Confirm"
+        android:layout_width="275.1dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateAccountDetails"
+        android:layout_marginTop="132.7dp"
+        android:gravity="center"
+        android:layout_marginLeft="45.0dp"
+        android:background="@drawable/Buttonbehaviour" />
+</LinearLayout>

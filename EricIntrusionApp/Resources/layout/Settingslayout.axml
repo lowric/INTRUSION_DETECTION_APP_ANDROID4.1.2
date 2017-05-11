@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff030000"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="113.3dp"
+        android:id="@+id/linearLayout1"
+        android:background="#ff0a0505">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="234.0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:text="Text"
+                android:layout_width="fill_parent"
+                android:layout_height="23.3dp"
+                android:id="@+id/settingNameTextView"
+                android:typeface="normal"
+                android:textStyle="bold"
+                style="@android:style/TextAppearance.Medium" />
+            <TextView
+                android:text="Text"
+                android:layout_width="fill_parent"
+                android:layout_height="51.3dp"
+                android:id="@+id/settingDescriptionTextView"
+                android:layout_marginTop="10.0dp"
+                android:layout_marginBottom="0.0dp" />
+        </LinearLayout>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/checkBox"
+            android:layout_marginBottom="82.6dp"
+            android:layout_marginLeft="32.6dp"
+            android:checked="true" />
+    </LinearLayout>
+</LinearLayout>

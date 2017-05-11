@@ -1,0 +1,23 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EricIntrusionApp\HistoryActivity.cs">
+    <Files>
+      <File FileName="EricIntrusionApp\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="EricIntrusionApp\HistoryActivity.cs" Line="35" Column="4" />
+      <File FileName="EricIntrusionApp\ProtectionActivity.cs" Line="1" Column="1" />
+      <File FileName="EricIntrusionApp\SettingsActivity.cs" Line="21" Column="2" />
+      <File FileName="EricIntrusionApp\SetupActivityOne.cs" Line="1" Column="1" />
+      <File FileName="EricIntrusionApp\ProtectionService.cs" Line="1" Column="1" />
+      <File FileName="EricIntrusionApp\Resources\class\DataAccessObject.cs" Line="107" Column="16" />
+      <File FileName="EricIntrusionApp\AccountActivity.cs" Line="1" Column="1" />
+      <File FileName="EricIntrusionApp\Resources\Adapter\HistoryLayoutAdapter.cs" Line="17" Column="3" />
+      <File FileName="EricIntrusionApp\Resources\OptionItems.xml" Line="1" Column="1" />
+      <File FileName="EricIntrusionApp\Resources\drawable\ButtonBehaviour.xml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EricIntrusionApp MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" AndroidDeviceId-Debug="CB5122EGHF" />
+</Properties>

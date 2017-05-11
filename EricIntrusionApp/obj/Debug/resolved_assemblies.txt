@@ -1,0 +1,4 @@
+C:\Users\Admin\Documents\Projects\EricIntrusionApp\EricIntrusionApp\bin\Debug\EricIntrusionApp.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v4.1\Mono.Android.GoogleMaps.dll
+C:\Users\Admin\Documents\Projects\EricIntrusionApp\Components\sqlite-net-1.0.1\lib\android\SQLite.dll
+C:\Users\Admin\Documents\Projects\EricIntrusionApp\Components\xamarin.mobile-0.7\lib\android\Xamarin.Mobile.dll
